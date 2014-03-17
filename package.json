@@ -1,0 +1,40 @@
+{
+  "name": "heinzelmannchen-gen-pg",
+  "version": "0.0.0",
+  "description": "File System Stuff",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "q": "~1.0.0",
+    "heinzelmannchen-generator": "git://github.com/heinzelmannchen/heinzelmannchen-generator",
+    "pg2json": "git://github.com/heinzelmannchen/pg2json"
+  },
+  "devDependencies": {
+    "mock-fs": "~2.2.0",
+    "proxyquire": "~0.5.3",
+    "sinon-chai": "~2.5.0",
+    "sinon": "~1.9.0",
+    "mocha": "~1.17.1",
+    "mocha-as-promised": "~2.0.0",
+    "chai": "~1.9.0",
+    "chai-as-promised": "~4.1.0",
+    "underscore": "~1.6.0",
+    "chai-fuzzy": "~1.4.0",
+    "mocha-jshint": "0.0.7"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heinzelmannchen/heinzelmannchen-gen-pg.git"
+  },
+  "author": "Christoph Hermann & Sebastian Sprenger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heinzelmannchen/heinzelmannchen-gen-pg/issues"
+  },
+  "homepage": "https://github.com/heinzelmannchen/heinzelmannchen-gen-pg"
+}
