@@ -3,19 +3,11 @@ var Q = require('q'),
     pg2json = require('pg2json'),
     connection = require('pg2json/lib/connection'),
     tables = require('pg2json/lib/tables'),
-    Generator = Parent.inherit(),
-    config;
-
-
-
-
-Generator.prototype.setConfig = function(theConfig) {
-    config = theConfig;
-};
+    Generator = Parent.inherit();
 
 Generator.prototype.createData = function() {
     var q = Q.defer();
-    connection.connect(config)
+    connection.connect(this.config)
         .then(tables.get)
         .then(function(tables) {
             q.resolve(tables);
