@@ -8,5 +8,7 @@ g.setConfig({
     'user': 'anton'
 });
 g.createData().then(function(tables) {
-    console.log(tables);
+    console.dir(tables);
 });
+
+console.log(g.explain());
