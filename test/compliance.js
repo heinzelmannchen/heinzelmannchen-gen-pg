@@ -14,8 +14,8 @@ describe('Generator', function() {
         var generator = Generator.inherit();
         generator.should.respondTo('createData');
         generator.should.respondTo('setConfig');
-        generator.should.respondTo('explain');
-        generator.should.respondTo('help');
+        Generator.explain.should.be.a('Function');
+        Generator.help.should.be.a('Function');
     });
 
     it('should be typof generator', function() {

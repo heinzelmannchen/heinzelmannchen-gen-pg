@@ -20,7 +20,7 @@ Generator.prototype.createData = function() {
         });
 };
 
-Generator.prototype.explain = function() {
+Generator.explain = function() {
     var text = ['[{',
         '\ttable_name: "a-table-name",',
         '\ttable_schema: "public",',
@@ -37,6 +37,8 @@ Generator.prototype.explain = function() {
     return text.join('\n');
 };
 
-Generator.prototype.help = function() {};
+Generator.help = function() {
+    return 'Generates data using pg2json';
+};
 
 module.exports = Generator;
