@@ -6,11 +6,12 @@ var Q = require('q'),
     Generator = Parent.inherit();
 
 Generator.prototype.createData = function() {
+    var me = this;
     return connection.connect(this.config)
         .then(function() {
             var tableNames = null;
-            if (this.filters) {
-                tableNames = this.filters.tables;
+            if (me.filters) {
+                tableNames = me.filters.tables;
             }
             return tables.get(tableNames);
         })
