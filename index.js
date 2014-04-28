@@ -6,18 +6,13 @@ var Q = require('q'),
     Generator = Parent.inherit();
 
 Generator.prototype.createData = function() {
-    var q = Q.defer();
-    connection.connect(this.config)
+    return connection.connect(this.config)
         .then(function() {
             return tables.get();
         })
         .then(function(tables) {
-            q.resolve(tables);
-        })
-        .fail(function(error) {
-            q.reject(error);
+            return tables;
         });
-    return q.promise;
 };
 
 Generator.prototype.explain = function() {
