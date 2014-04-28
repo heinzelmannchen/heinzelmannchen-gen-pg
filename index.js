@@ -2,7 +2,8 @@ var Q = require('q'),
     Parent = require('heinzelmannchen-generator'),
     pg2json = require('pg2json'),
     connection = require('pg2json/lib/connection'),
-    tables = require('pg2json/lib/tables'),
+    dataTypeProvider = require('heinzelmannchen-datatypes/lib/datatypesProvider'),
+    dataTypes = require('heinzelmannchen-datatypes').createMapper(dataTypeProvider.pg, dataTypeProvider.heinzel),
     Generator = Parent.inherit();
 
 Generator.prototype.createData = function() {
@@ -13,7 +14,8 @@ Generator.prototype.createData = function() {
             if (me.filters) {
                 tableNames = me.filters.tables;
             }
-            return tables.get(tableNames);
+            pg2json.setDataTypeMapping(dataTypes);
+            return pg2json.get(tableNames);
         })
         .then(function(tables) {
             return tables;

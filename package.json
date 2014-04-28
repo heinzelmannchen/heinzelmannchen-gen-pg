@@ -9,7 +9,8 @@
   "dependencies": {
     "q": "~1.0.0",
     "heinzelmannchen-generator": "git://github.com/heinzelmannchen/heinzelmannchen-generator",
-    "pg2json": "git://github.com/heinzelmannchen/pg2json"
+    "pg2json": "git://github.com/heinzelmannchen/pg2json",
+    "heinzelmannchen-datatypes": "git://github.com/heinzelmannchen/heinzelmannchen-datatypes"
   },
   "devDependencies": {
     "mock-fs": "~2.2.0",
@@ -25,7 +26,8 @@
     "mocha-jshint": "0.0.7"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "integration": "mocha integrationTest --reporter spec"
   },
   "repository": {
     "type": "git",
