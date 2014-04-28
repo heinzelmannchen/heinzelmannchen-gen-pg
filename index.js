@@ -8,11 +8,11 @@ var Q = require('q'),
 Generator.prototype.createData = function() {
     return connection.connect(this.config)
         .then(function() {
-            var tables = null;
+            var tableNames = null;
             if (this.filters) {
-                tables = this.filters.tables;
+                tableNames = this.filters.tables;
             }
-            return tables.get(tables);
+            return tables.get(tableNames);
         })
         .then(function(tables) {
             return tables;
