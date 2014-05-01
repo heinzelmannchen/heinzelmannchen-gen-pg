@@ -1,6 +1,6 @@
 {
   "name": "heinzelmannchen-gen-pg",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "File System Stuff",
   "main": "index.js",
   "directories": {
