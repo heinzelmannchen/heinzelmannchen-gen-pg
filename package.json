@@ -1,16 +1,16 @@
 {
   "name": "heinzelmannchen-gen-pg",
-  "version": "0.0.1",
-  "description": "File System Stuff",
+  "version": "1.0.0",
+  "description": "PostGresql generator for heinzelmannchen",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
     "q": "~1.0.0",
-    "heinzelmannchen-generator": "git://github.com/heinzelmannchen/heinzelmannchen-generator",
-    "pg2json": "git://github.com/heinzelmannchen/pg2json",
-    "heinzelmannchen-datatypes": "git://github.com/heinzelmannchen/heinzelmannchen-datatypes"
+    "heinzelmannchen-generator": "~1.0.0",
+    "heinzelmannchen-datatypes": "~1.0.0",
+    "pg2json": "~0.1.0"
   },
   "devDependencies": {
     "mock-fs": "~2.2.0",
