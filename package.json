@@ -10,7 +10,7 @@
     "q": "~1.0.0",
     "heinzelmannchen-generator": "~1.0.0",
     "heinzelmannchen-datatypes": "~1.0.0",
-    "pg2json": "~0.1.0"
+    "pg2json": "~0.1.1"
   },
   "devDependencies": {
     "mock-fs": "~2.2.0",
