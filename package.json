@@ -1,6 +1,6 @@
 {
   "name": "heinzelmannchen-gen-pg",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "PostGresql generator for heinzelmannchen",
   "main": "index.js",
   "directories": {
@@ -9,7 +9,7 @@
   "dependencies": {
     "q": "~1.0.0",
     "heinzelmannchen-generator": "~1.0.2",
-    "heinzelmannchen-datatypes": "~1.0.2",
+    "heinzelmannchen-datatypes": "~1.0.3",
     "pg2json": "~0.1.1"
   },
   "devDependencies": {
